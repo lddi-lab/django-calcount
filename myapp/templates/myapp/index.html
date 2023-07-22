@@ -16,5 +16,9 @@
         <button type="sumbit">add</button>
     </form>
 
+    {% for c in consumed_food %}
+        {{ c.food_consumed.name }} --> Carb: {{ c.food_consumed.carbs }} Proten: --> {{ c.food_consumed.protein }} --> Fats: {{ c.food_consumed.fat }} --> Calories: {{ c.food_consumed.calories }} <br>
+    {% endfor %}
+
 </body>
 </html>
