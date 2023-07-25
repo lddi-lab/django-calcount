@@ -10,6 +10,13 @@
 <body>
 
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-dark bg bg-primary">
+                    <span class="navbar-brand">Calorie Tracker</span>
+                </nav>
+            </div>
+        </div>
         <br><br><br>
         <h4>Calorie Goal</h4>
         <br>
@@ -34,7 +41,7 @@
                             <option value="{{ food.name }}">{{ food.name }}</option>
                             {% endfor %}
                         </select>
-                        <button class="btn btn-success" type="sumbit">add</button>
+                        <button class="btn btn-success" type="sumbit">Add</button>
                     </div>
                 </form>
 
@@ -71,7 +78,14 @@
                         </tr>
                 </table>
             </div>
-            <div class="col-md-5 offset"></div>
+            <div class="col-md-5 offset">
+                <div class="">
+                    <h4>Today's breakdown</h4>
+                </div>
+                <div class="card-hearder text-white bg-primary">
+                    <h4>Macronutrients breakdown</h4>
+                </div>
+            </div>
         </div>
     </div>
 
